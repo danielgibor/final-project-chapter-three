@@ -1,0 +1,25 @@
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.title-divider {
+    border: none;
+    border-top: 3px solid black;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    /* fill the space entirely while maintaining its original aspect ratio. */
+    object-fit: cover;
+    /* If image inside flexbox it prevents the browser from squeezing or shrinking the image
+     when screen space gets tight. It forces the image to stay exactly 150px wide. */
+    flex-shrink: 0;
+}
