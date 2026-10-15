@@ -66,6 +66,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
     color: black;
+    background-color: white;
 }
 
 .btn:hover {
@@ -73,7 +74,7 @@ body {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .profile-section {
         flex-direction: column;
         text-align: center;
@@ -120,3 +121,27 @@ body {
     background-color: white;
     margin-left: 178px;
 }
+
+/* Projects */
+
+.project-card {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.project-details {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed white;
+}
+
+
+.btn-small {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+ 
