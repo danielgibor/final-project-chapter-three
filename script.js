@@ -12,3 +12,18 @@ button.addEventListener('click', (event)=>{
         button.textContent = 'Read more about Me';
     }
 });
+
+// Contact Form
+const form = document.querySelector("#contact-form");
+const submissionMessage = document.querySelector("#result-message");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const nameForm = document.querySelector("#name").value.trim();
+    const emailForm = document.querySelector("#email").value.trim();
+    const messageForm = document.querySelector("#message").value.trim();
+    if((!nameForm) || (!emailForm) || (!messageForm)){
+        submissionMessage.textContent = "Please fill in all required fields";
+        return;
+    }
+    submissionMessage.textContent = "Submission Completed";
+});

@@ -40,12 +40,12 @@ body {
 
 .profile-info h1 {
     font-size: 32px;
-    color: #333;
+    color: black;
     margin-bottom: 10px;
 }
 
 .profile-info p {
-    color: #555;
+    color: black;
     line-height: 1.6;
     font-size: 18px;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #333;
+    background-color: black;
     color: white;
 }
 
@@ -107,6 +107,12 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+}
+
+#btn-readme:hover {
+    background-color: black;
+    color: white;
 }
 
 #readme-container{
