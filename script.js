@@ -27,3 +27,25 @@ form.addEventListener("submit", (event) => {
     }
     submissionMessage.textContent = "Submission Completed";
 });
+
+// Skills
+
+const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Java",
+    "Git",
+    "Github",
+    "LaTeX",
+    "HDL",
+    "VM"
+]
+
+const skillContainer = document.querySelector("#skills-container");
+for (const skill of skills){
+    const skillElement = document.createElement("div");
+    skillElement.classList.add("btn");
+    skillElement.textContent = skill;
+    skillContainer.appendChild(skillElement);
+}
